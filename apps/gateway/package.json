@@ -17,7 +17,9 @@
     "@talonsos/core": "workspace:*",
     "@talonsos/config": "workspace:*",
     "@talonsos/observability": "workspace:*",
-    "@talonsos/connectors-sdk": "workspace:*"
+    "@talonsos/connectors-sdk": "workspace:*",
+    "@talonsos/agents": "workspace:*",
+    "@talonsos/skills": "workspace:*"
   },
   "devDependencies": {
     "tsx": "^4.19.2",

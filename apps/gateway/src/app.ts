@@ -5,6 +5,7 @@ import websocket from "@fastify/websocket";
 import { gatewayConfig } from "./config.js";
 import { registerHealthRoutes } from "./routes/health.js";
 import { registerInboundRoutes } from "./routes/inbound.js";
+import { registerCatalogRoutes } from "./routes/catalog.js";
 
 function readRequestIdHeader(request: FastifyRequest) {
   const header = request.headers["x-request-id"];
@@ -102,6 +103,7 @@ export async function buildGatewayApp() {
 
   await registerHealthRoutes(app);
   await registerInboundRoutes(app);
+  await registerCatalogRoutes(app);
 
   app.get("/ws", { websocket: true }, (socket, request) => {
     socket.send(
