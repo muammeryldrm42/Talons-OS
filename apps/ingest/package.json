@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@talonsos/rag": "workspace:*",
-    "@talonsos/config": "workspace:*"
+    "@talonsos/config": "workspace:*",
+    "@talonsos/observability": "workspace:*"
   },
   "devDependencies": {
     "tsx": "^4.19.2",

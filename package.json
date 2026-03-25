@@ -2,12 +2,18 @@
   "name": "talonsos",
   "private": true,
   "version": "0.1.0",
-  "packageManager": "pnpm@10",
+  "packageManager": "pnpm@10.30.1",
   "scripts": {
     "dev": "turbo run dev --parallel",
+    "dev:web": "pnpm --filter @talonsos/web dev",
+    "dev:gateway": "pnpm --filter @talonsos/gateway dev",
+    "dev:worker": "pnpm --filter @talonsos/worker dev",
+    "dev:ingest": "pnpm --filter @talonsos/ingest dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
+    "check": "turbo run typecheck build",
+    "ci:local": "turbo run lint typecheck build",
     "format": "echo \"Add formatter of choice\""
   },
   "devDependencies": {
