@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": false,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@talonsos/core": ["packages/core/src/index.ts"],
+      "@talonsos/config": ["packages/config/src/index.ts"],
+      "@talonsos/auth": ["packages/auth/src/index.ts"],
+      "@talonsos/db": ["packages/db/src/index.ts"],
+      "@talonsos/ai": ["packages/ai/src/index.ts"],
+      "@talonsos/agents": ["packages/agents/src/index.ts"],
+      "@talonsos/memory": ["packages/memory/src/index.ts"],
+      "@talonsos/rag": ["packages/rag/src/index.ts"],
+      "@talonsos/tools": ["packages/tools/src/index.ts"],
+      "@talonsos/workflows": ["packages/workflows/src/index.ts"],
+      "@talonsos/queue": ["packages/queue/src/index.ts"],
+      "@talonsos/observability": ["packages/observability/src/index.ts"],
+      "@talonsos/security": ["packages/security/src/index.ts"],
+      "@talonsos/connectors-sdk": ["packages/connectors-sdk/src/index.ts"],
+      "@talonsos/skills": ["packages/skills/src/index.ts"],
+      "@talonsos/ui": ["packages/ui/src/index.ts"]
+    }
+  }
+}
